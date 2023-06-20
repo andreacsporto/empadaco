@@ -1,0 +1,98 @@
+<html>
+<head>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"rel="stylesheet">
+    <link href="style.css" rel="stylesheet"/>
+    </head>
+<body>
+
+    <header>
+        <div class="center">
+            <div class="logo">
+                <h2>Empadaço</h2>
+
+            </div><!--logo-->
+            <div class="menu">
+                <a href="#">
+                    Home
+                </a>
+                <a href="#">
+                    Sobre
+                </a>
+                <a href="#">
+                    Contato
+                </a>
+                <a class="btn-menu" href="#">
+                    Iniciar
+                </a>
+            </div><!--menu-->
+                <div class="menu-mobile">
+                    <i class="fa-solid fa-bars menu-mobile-icon"></i>
+                    <div class="menu-items">
+                        <a href="">Home</a>
+                        <a href="">Sobre</a>
+                        <a href="">Contato</a>
+                        </div><!--menu-items-->
+                </div><!--menu-mobile-->
+        </div><!--center -->
+       
+    </header>
+    <section class="main">
+        <div class="center">
+            <div class="main_cta">
+                <h2>Somos apaixonados por empadas</h2>
+                <p><img src="C:\Users\soare\Downloads\35789.avif" alt=""></p>
+                <Button>Iniciar</Button>
+            </div><!---main_cta-->
+            <div class="diferenciais">
+                <div class="diferencial-single">
+                    <h2>Nossa História</h2>
+                    <p>Um breve relato de como tudo começou</p>
+                </div><!--diferencial-single-->
+                    <div class="diferencial-single">
+                    <h2>Nossos valores</h2>
+                    <p>O que nos move</p>
+                </div><!--diferencial-single-->
+                <div class="diferencial-single">
+                    <h2>Nossos projetos</h2>
+                    <p>Um pouco dos nossos sonhos</p>
+                </div><!--diferencial-single-->
+                <div class="diferencial-single">
+                    <h2>Fale conosco</h2>
+                    <p>Sua interação é muito importante.</p>
+                </div><!--diferencial-single-->
+            </div><!--diferenciais-->
+        </div><!--center-->
+    </section><!--main-->
+    <section class="Sobre">
+        <div class="center">
+            <div class="chamada-sobre">
+                <h2>Sobre a Empadaço</h2>
+                <p>Empadaço está iniciando suas atividades e tem o prazer de ofertar afeto em forma de empadas.</p>              
+            </div><!--chamada-sobre-->
+                <div class="conteudo-sobre">
+                <h2>Sobre nossos produtos</h2>
+                <p>Produtos de qualidade feitos com produtos orgânicos.Vendemos no atacado e varejo para a cidade de Patos de Minas MG e região. Em breve comercializaremos nossos produtos através deste site.</p>
+            </div><!--conteudo-sobre-->
+        </div><!--center-->
+    </section><!--sobre-->
+
+
+
+    <script src="https://kit.fontawesome.com/16544f2866.js"crossorigin="anonymous"></script>
+    <script>
+        var el = document.querySelector('.menu-mobile-icon');
+
+        el.addEventListener('click',()=>{
+           var menuItems = document.querySelector('menu-items');
+           if(menuItems.classList.contains('show')){
+            menuItems.classList.add('hide');
+            menuItems.classlist.remove('show');
+           }else{
+            menuItems.classList.add('show');
+            menuItems.classList.remove('hide'):
+           }
+        });
+    </script>    
+</body>
+</html>
